@@ -3,7 +3,7 @@ package com.example.android.miwokdict;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
-import android.widget.GridView;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -33,9 +33,9 @@ public class Numbers extends AppCompatActivity {
 
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, englishWords);
 
-        GridView GridView =  findViewById(R.id.list);
+        ListView listView =  findViewById(R.id.list);
 
-        GridView.setAdapter(itemsAdapter);
+        listView.setAdapter(itemsAdapter);
 
 
 
