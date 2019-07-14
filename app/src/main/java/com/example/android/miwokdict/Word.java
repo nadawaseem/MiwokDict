@@ -7,20 +7,25 @@ public class Word {
     //@param for miwok word
     private String mMiwokWord;
 
-//constructor for initializing values to the two Strings
-  public Word(String defaultWord,String miwokWord){
-      defaultWord=mDefaultWord;
-      miwokWord=mMiwokWord;
-  }
+    //constructor for initializing values to the two Strings
+    public Word(String defaultTranslation, String miwokTranslation) {
+        mDefaultWord = defaultTranslation;
+        mMiwokWord = miwokTranslation;
+    }
 
-//method for returning  english word
-public String getDefaultWord(){
-   return mDefaultWord;
-}
-//method for returning miwok word
-public String getMiwokWord(){
+        /**
+         * Get the default translation of the word.
+         */
+        public String getDefaultWord() {
+            return mDefaultWord;
+        }
 
-    return mMiwokWord;
-}
+        /**
+         * Get the Miwok translation of the word.
+         */
+        public String getMiwokWord () {
+            return mMiwokWord;
+        }
 
-}
+    }
+
